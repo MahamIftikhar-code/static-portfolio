@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maham Iftikhar : DevOps Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">MI</div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hello">Hello, I'm</p>
+      <h1>Maham Iftikhar</h1>
+      <h2>DevOps Engineer</h2>
+      <p class="tagline">Building automated pipelines, containerized apps & cloud infrastructure</p>
+      <div class="hero-badges">
+        <span class="badge">Docker</span>
+        <span class="badge">AWS</span>
+        <span class="badge">CI/CD</span>
+        <span class="badge">Kubernetes</span>
+      </div>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="https://github.com/MahamIftikhar-code" class="btn-secondary" target="_blank">GitHub</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="terminal">
+        <div class="terminal-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="terminal-title">pipeline.sh</span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="prompt">$</span> git push origin main</p>
+          <p class="output">Tests passed</p>
+          <p class="output">Docker image built</p>
+          <p class="output">Pushed to Docker Hub</p>
+          <p class="output">Deployed to AWS EC2</p>
+          <p><span class="prompt">$</span> <span class="cursor">▌</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p class="about-text">
+        I'm a passionate DevOps learner building real world projects using
+        industry standard tools. I focus on automating everything —
+        from code testing to cloud deployment.
+      </p>
+      <div class="stats-row">
+        <div class="stat">
+          <h3>6+</h3>
+          <p>Projects Built</p>
+        </div>
+        <div class="stat">
+          <h3>4+</h3>
+          <p>Tools Mastered</p>
+        </div>
+        <div class="stat">
+          <h3>1</h3>
+          <p>Month Journey</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-icon"></div>
+          <h3>Server Health Dashboard</h3>
+          <p>Automated bash script that monitors CPU, RAM, disk usage and generates reports. Auto-commits to GitHub via cron job.</p>
+          <div class="project-tags">
+            <span>Bash</span><span>Git</span><span>Cron</span>
+          </div>
+          <a href="https://github.com/MahamIftikhar-code/server-health-dashboard" target="_blank" class="project-link">View on GitHub →</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon"></div>
+          <h3>Dockerized Todo App</h3>
+          <p>Full-stack Todo app with Node.js backend and PostgreSQL database. Data persists across container restarts using Docker volumes.</p>
+          <div class="project-tags">
+            <span>Docker</span><span>Node.js</span><span>PostgreSQL</span>
+          </div>
+          <a href="https://github.com/MahamIftikhar-code/todo-app" target="_blank" class="project-link">View on GitHub →</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-icon"></div>
+          <h3>Multi-Stage Docker Build</h3>
+          <p>Production REST API with multi-stage Dockerfile. Reduced image size by 84% — from 1.1GB to 180MB. Published on Docker Hub.</p>
+          <div class="project-tags">
+            <span>Docker</span><span>Node.js</span><span>Docker Hub</span>
+          </div>
+          <a href="https://github.com/MahamIftikhar-code/multi-stage-api" target="_blank" class="project-link">View on GitHub →</a>
+        </div>
+
+        <div class="project-card featured">
+          <div class="featured-badge">Featured</div>
+          <div class="project-icon"></div>
+          <h3>CI/CD Pipeline — AWS EC2</h3>
+          <p>Complete automated pipeline. Every git push triggers tests, Docker build, push to Docker Hub, and deployment to AWS EC2 via SSH.</p>
+          <div class="project-tags">
+            <span>GitHub Actions</span><span>Docker</span><span>AWS EC2</span>
+          </div>
+          <a href="https://github.com/MahamIftikhar-code/devops-pipeline" target="_blank" class="project-link">View on GitHub →</a>
+        </div>
+
+        <div class="project-card featured">
+          <div class="featured-badge">Featured</div>
+          <div class="project-icon"></div>
+          <h3>Static Site — S3 + CloudFront</h3>
+          <p>This portfolio! Hosted on AWS S3 with CloudFront CDN. Auto-deploys on every git push via GitHub Actions. HTTPS enabled.</p>
+          <div class="project-tags">
+            <span>AWS S3</span><span>CloudFront</span><span>GitHub Actions</span>
+          </div>
+          <a href="https://github.com/MahamIftikhar-code/static-portfolio" target="_blank" class="project-link">View on GitHub →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Containers</h3>
+          <ul>
+            <li>Docker</li>
+            <li>Docker Compose</li>
+            <li>Docker Hub</li>
+            <li>Multi-stage builds</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Cloud</h3>
+          <ul>
+            <li>AWS EC2</li>
+            <li>AWS S3</li>
+            <li>CloudFront CDN</li>
+            <li>IAM</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>CI/CD</h3>
+          <ul>
+            <li>GitHub Actions</li>
+            <li>Automated testing</li>
+            <li>Docker build & push</li>
+            <li>SSH deployment</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Tools</h3>
+          <ul>
+            <li>Git & GitHub</li>
+            <li>Linux / Bash</li>
+            <li>Node.js</li>
+            <li>PostgreSQL</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-text">Looking for DevOps internship opportunities!</p>
+      <div class="contact-links">
+        <a href="https://github.com/MahamIftikhar-code" target="_blank" class="contact-btn">
+          GitHub
+        </a>
+        <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank" class="contact-btn">
+          LinkedIn
+        </a>
+        <a href="mailto:YOUR_EMAIL" class="contact-btn">
+          Email
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Hosted on AWS S3 + CloudFront | Auto-deployed via GitHub Actions</p>
+    <p>© 2026 Maham Iftikhar</p>
+  </footer>
+
+</body>
+</html>
