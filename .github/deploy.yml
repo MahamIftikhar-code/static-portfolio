@@ -19,8 +19,7 @@ jobs:
           aws-region: us-east-1
 
       - name: Upload to S3
-        run: |
-          aws s3 sync . s3://devops-portfolio-maham \
+        run: |aws s3 sync . s3://maham-portfolio \
             --exclude ".git/*" \
             --exclude ".github/*" \
             --exclude "*.md" \
